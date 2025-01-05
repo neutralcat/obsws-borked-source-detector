@@ -1,4 +1,4 @@
- # REQUIREMENTS:
+# REQUIREMENTS:
 # make a virtual environment with obsws-python installed through pip
 
 #####################
