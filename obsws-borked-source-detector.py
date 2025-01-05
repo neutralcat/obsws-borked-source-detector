@@ -1,4 +1,4 @@
-# REQUIREMENTS:
+ # REQUIREMENTS:
 # make a virtual environment with obsws-python installed through pip
 
 #####################
@@ -49,7 +49,7 @@ while True:
     print(f"\033[92msaved screenshot to {path.join(image_folder, f"{TEMP_IMAGE_PREFIX}.{"a" if current else "b"}.{IMAGE_FORMAT}")}\033[37m")
 
     if they_have_the_same_hash():
-        raise Exception("\033[31mOBS FUCKED UP AGAIN\033[37m")
+        raise Exception("\033[31mOBS FUCKED UP AGAIN\033[37m") # TODO: use the DBUS org.freedesktop.Notifications interface to send a notification to the user. maybe desktop-notifier package
 
     print(f"\033[2msleeping for {SCREENSHOT_DELAY} seconds...\033[22m")
     current = not current
