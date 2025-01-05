@@ -1,7 +1,12 @@
 # REQUIREMENTS:
 # make a virtual environment with obsws-python installed through pip
+# OBS must be installed and running a websocket server
 
 #####################
+WEBSOCKET_HOST = "localhost"
+WEBSOCKET_PORT = "4455"
+WEBSOCKET_PASSWORD = ""
+
 SCREENSHOT_DELAY = 60 # seconds
 IMAGE_FORMAT = "png"
 TEMP_FOLDER_NAME = "temp"
@@ -13,7 +18,7 @@ from hashlib import md5
 import obsws_python as obsws
 from os import path, getcwd, mkdir
 
-client = obsws.ReqClient(host='localhost',port=4455,password='NPRBvjgyIPvCniEF')
+client = obsws.ReqClient(host=WEBSOCKET_HOST,port=WEBSOCKET_PORT,password=WEBSOCKET_PASSWORD)
 image_folder = path.join(getcwd(), "temp")
 
 if not path.exists(image_folder):
