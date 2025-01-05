@@ -1,4 +1,5 @@
-#!/home/neutral/Scripts/OBS/venv-obsws/bin/python
+# REQUIREMENTS:
+# make a virtual environment with obsws-python installed through pip
 
 #####################
 SCREENSHOT_DELAY = 60 # seconds
